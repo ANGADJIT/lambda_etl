@@ -25,4 +25,3 @@ def process_todos(event, context):
     # end of job
     logging.info('*****END JOB*****')
 
-process_todos(None,None)
