@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import todo_provider
 import process
 from aws import upload_todos_csv
@@ -6,8 +5,6 @@ import logging
 
 
 def process_todos(event, context):
-    load_dotenv()
-
     # upload all todos
     todo_provider.upload_todos()
 
